@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+        <nav class="nav flex-column blue lighten-5 py-4">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" (click)="test.toggle()" mdbWavesEffect>Distic</a>
+            <div mdbCollapse [isCollapsed]="true" #test="bs-collapse">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="#">Home</a>
+              </div>
+              <a class="nav-link" (click)="text.toggle()" mdbWavesEffect>mandal</a>
+              <div mdbCollapse [isCollapsed]="true" #text="bs-collapse">
+                  <a class="nav-link active" href="#">Home</a>
+                  <a class="nav-link active" href="#">Home</a>
+                </div>
+        </nav>        
+    </div>
+  <div class="col-md-9">
+<mdb-card>
+    <div class="view rgba-white-slight waves-light" mdbWavesEffect width="200" >
+      custome elements
+      <mdb-card-img  src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap" width="300"></mdb-card-img>
+      <a>
+        <div class="mask"></div>
+      </a>
+    </div>
+    <mdb-card-body>
+      <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+        content.
+      </mdb-card-text>
+    </mdb-card-body>
+  </mdb-card>
+  </div>
+  </div>
+</div>
