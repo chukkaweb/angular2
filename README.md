@@ -1,4 +1,11 @@
 # angular2
+# https://www.agiratech.com/top-10-angular-best-practices/
+# https://malcoded.com/posts/improve-your-angular-codebase/
+# https://stackoverflow.com/questions/36490926/how-to-cancel-a-httprequest-in-angular-2
+# https://stackoverflow.com/questions/38008334/angular-rxjs-when-should-i-unsubscribe-from-subscription
+# https://blog.angulartraining.com/how-to-automatically-unsubscribe-your-rxjs-observables-tutorial-2f98b0560298
+# https://netbasal.com/when-to-unsubscribe-in-angular-d61c6b21bad3
+
 # Int
 # https://github.com/sudheerj/angular-interview-questions#what-is-angular-framework
 Js int
