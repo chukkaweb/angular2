@@ -8,34 +8,10 @@
 
 # Int
 # https://github.com/sudheerj/angular-interview-questions#what-is-angular-framework
-Js int
-https://www.edureka.co/blog/interview-questions/javascript-interview-questions/
-Clean code
-https://itnext.io/clean-code-checklist-in-angular-%EF%B8%8F-10d4db877f74
-
-# Same route refresh
-https://stackoverflow.com/questions/47813927/how-to-refresh-a-component-in-angular
-
-Iframe binding
-
-
-https://stackoverflow.com/questions/52382608/angular-6-iframe-binding
-
- <script async src="//www.instagram.com/embed.js" charset="utf-8"></script>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-After response
-setTimeout(function() {
- (<any>window).twttr.widgets.load();
- (<any>window).instgrm.Embeds.process();
- }, 1000);
 
 # Angular app performance
 https://medium.com/@spp020/44-quick-tips-to-fine-tune-angular-performance-9f5768f5d945
 Ng add 
-
-# Dynamically color apply
-https://www.sitepoint.com/community/t/angular-2-4-changing-the-background-color-of-a-panel-dynamically/274747
 
 # Seo in angular
 Adding SEO support to Angular 6 application
@@ -56,18 +32,6 @@ https://help.ubuntu.com/stable/ubuntu-help/display-dual-monitors.html
 
 https://medium.com/@spp020/44-quick-tips-to-fine-tune-angular-performance-9f5768f5d945
 
-# Workspace and project file structure
-The package.json is organized into two groups of packages:
-Dependencies are essential to running applications.
-DevDependencies are only necessary to develop applications.
- 
-# Dependencies
-The packages listed in the dependencies section of package.json are essential to running applications.
-The dependencies section of package.json contains:
-Angular packages: Angular core and optional modules; their package names begin @angular/.
-Support packages: 3rd party libraries that must be present for Angular apps to run.
-Polyfill packages: Polyfills plug gaps in a browser's JavaScript implementation.
-To add a new dependency, use the ng add command.
 
 # he Ahead-of-Time (AOT) compiler
 The Angular Ahead-of-Time (AOT) compiler converts your Angular HTML and TypeScript code into efficient JavaScript code during the build phase before the browser downloads and runs that code. Compiling your application during the build process provides a faster rendering in the browser.
@@ -192,29 +156,6 @@ When making API calls, responses from some of them do not change often. In those
 If the values change but not frequently, you can introduce a cache time where you can check when it was last cached and decide whether or not to call the API.
 Why?
 Having a caching mechanism means avoiding unwanted API calls. By only making the API calls when required and avoiding duplication, the speed of the application improves as we do not have to wait for the network. It also means we do not download the same information over and over again.
-
-# Strings should be safe
-If you have a variable of type string that can have only a set of values, instead of declaring it as a string type, you can declare the list of possible values as the type.
-Why?
-By declaring the type of the variable appropriately, we can avoid bugs while writing the code during compile time rather than during runtime.
-Before
-private myStringValue: string;
-if (itShouldHaveFirstValue) {
-  myStringValue = 'First';
-} else {
-  myStringValue = 'Second'
-}
-After
-private myStringValue: 'First' | 'Second';
-if (itShouldHaveFirstValue) {
-  myStringValue = 'First';
-} else {
-  myStringValue = 'Other'
-}
-// This will give the below error
-Type '"Other"' is not assignable to type '"First" | "Second"'
-(property) AppComponent.myValue: "First" | "Second"
-
 
 # Jest
 Jest is Facebook’s unit testing framework for JavaScript. It makes unit testing faster by parallelising test runs across the code base. With its watch mode, only the tests related to the changes made are run, which makes the feedback loop for testing way shorter. Jest also provides code coverage of the tests and is supported on VS Code and Webstorm.
